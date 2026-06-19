@@ -17,12 +17,11 @@ export const metadata: Metadata = {
     template: "%s | Eduardo V. Pérez-Hernández",
   },
   description:
-    "MSCS student — software engineer and researcher. Open-source projects and scientific publications.",
+    "MSCS student. Open-source projects and scientific publications.",
   keywords: [
     "Eduardo Valentín Pérez",
     "MSCS",
     "computer science",
-    "software engineer",
     "researcher",
     "portfolio",
   ],
@@ -33,12 +32,12 @@ export const metadata: Metadata = {
     url: "https://valent-in-git.github.io",
     siteName: "Eduardo V. Pérez-Hernández — Portfolio",
     title: "Eduardo Valentín Pérez Hernández",
-    description: "MSCS student — software engineer and researcher.",
+    description: "MSCS student.",
   },
   twitter: {
     card: "summary",
     title: "Eduardo Valentín Pérez Hernández",
-    description: "MSCS student — software engineer and researcher.",
+    description: "MSCS student.",
   },
   robots: { index: true, follow: true },
 };
