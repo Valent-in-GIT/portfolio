@@ -2,39 +2,24 @@ import Link from "next/link";
 import { formatDate, getLangColor, truncate } from "@/lib/utils";
 import type { GitHubRepo } from "@/types";
 
-interface Props {
-  repo: GitHubRepo;
-}
+interface Props { repo: GitHubRepo; }
 
 export default function ProjectCard({ repo }: Props) {
   return (
-    <article className="group flex flex-col rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-shadow hover:shadow-md">
-      {/* Header */}
+    <article className="group flex flex-col rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-5 shadow-sm transition-shadow hover:shadow-md">
       <div className="flex items-start justify-between gap-3">
         <div className="flex-1 min-w-0">
-          <Link
-            href={repo.html_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-semibold text-slate-900 hover:text-brand-600 transition-colors line-clamp-1"
-          >
+          <Link href={repo.html_url} target="_blank" rel="noopener noreferrer"
+            className="text-sm font-semibold text-slate-900 dark:text-slate-100 hover:text-brand-600 dark:hover:text-brand-400 transition-colors line-clamp-1">
             {repo.name}
           </Link>
-          <p className="mt-1 text-xs text-slate-500 line-clamp-2 min-h-[2.5rem]">
-            {repo.description
-              ? truncate(repo.description, 120)
-              : "No description provided."}
+          <p className="mt-1 text-xs text-slate-500 dark:text-slate-400 line-clamp-2 min-h-[2.5rem]">
+            {repo.description ? truncate(repo.description, 120) : "No description provided."}
           </p>
         </div>
-
-        {/* External link icon */}
-        <Link
-          href={repo.html_url}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link href={repo.html_url} target="_blank" rel="noopener noreferrer"
           aria-label={`Open ${repo.name} on GitHub`}
-          className="shrink-0 text-slate-400 hover:text-slate-700 transition-colors"
-        >
+          className="shrink-0 text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-colors">
           <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
               d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -42,36 +27,25 @@ export default function ProjectCard({ repo }: Props) {
         </Link>
       </div>
 
-      {/* Topics */}
       {repo.topics.length > 0 && (
         <div className="mt-3 flex flex-wrap gap-1">
           {repo.topics.slice(0, 4).map((t) => (
-            <span
-              key={t}
-              className="rounded-full bg-brand-50 px-2 py-0.5 text-xs font-medium text-brand-700"
-            >
+            <span key={t} className="rounded-full bg-brand-50 dark:bg-brand-900/30 px-2 py-0.5 text-xs font-medium text-brand-700 dark:text-brand-300">
               {t}
             </span>
           ))}
         </div>
       )}
 
-      {/* Footer */}
-      <div className="mt-auto pt-4 flex items-center justify-between text-xs text-slate-500">
-        {/* Language */}
+      <div className="mt-auto pt-4 flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
         <span className="flex items-center gap-1.5">
           {repo.language && (
             <>
-              <span
-                className="inline-block h-2.5 w-2.5 rounded-full"
-                style={{ backgroundColor: getLangColor(repo.language) }}
-              />
+              <span className="inline-block h-2.5 w-2.5 rounded-full" style={{ backgroundColor: getLangColor(repo.language) }} />
               {repo.language}
             </>
           )}
         </span>
-
-        {/* Stars + Forks */}
         <span className="flex items-center gap-3">
           <span className="flex items-center gap-1">
             <svg className="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -90,15 +64,10 @@ export default function ProjectCard({ repo }: Props) {
         </span>
       </div>
 
-      {/* Live site link */}
       {repo.homepage && (
-        <div className="mt-2 border-t border-slate-100 pt-2">
-          <Link
-            href={repo.homepage}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-brand-600 hover:underline"
-          >
+        <div className="mt-2 border-t border-slate-100 dark:border-slate-700 pt-2">
+          <Link href={repo.homepage} target="_blank" rel="noopener noreferrer"
+            className="text-xs text-brand-600 dark:text-brand-400 hover:underline">
             🌐 Live site
           </Link>
         </div>

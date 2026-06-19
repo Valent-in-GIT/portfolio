@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ThemeProvider from "@/components/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: {
     default: "Eduardo Valentín Pérez Hernández",
-    template: "%s | Eduardo V. Pérez",
+    template: "%s | Eduardo V. Pérez-Hernández",
   },
   description:
     "MSCS student — software engineer and researcher. Open-source projects and scientific publications.",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://valent-in-git.github.io",
-    siteName: "Eduardo V. Pérez — Portfolio",
+    siteName: "Eduardo V. Pérez-Hernández — Portfolio",
     title: "Eduardo Valentín Pérez Hernández",
     description: "MSCS student — software engineer and researcher.",
   },
@@ -48,11 +49,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
-      <body className="flex min-h-screen flex-col bg-white">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <body className="flex min-h-screen flex-col bg-white dark:bg-slate-900 transition-colors">
+        <ThemeProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

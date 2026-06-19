@@ -42,8 +42,25 @@ export async function getRepos(): Promise<GitHubRepo[]> {
   }
 }
 
+// ── Pinned repos ──────────────────────────────────────────────────────────────
+// List repo names to feature, in display order.
+// Leave empty [] to show top repos by stars automatically.
+const PINNED: string[] = [
+  "CONITACS-EEGNetModel",
+  "Neurotutor_v1"
+];
+
+
+
 export async function getFeaturedRepos(count = 6): Promise<GitHubRepo[]> {
   const repos = await getRepos();
+
+  if (PINNED.length > 0) {
+    return PINNED
+      .map((name) => repos.find((r) => r.name === name))
+      .filter((r): r is GitHubRepo => r !== undefined);
+  }
+
   return repos.slice(0, count);
 }
 

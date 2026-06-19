@@ -48,6 +48,7 @@ export interface Publication {
   arxivId?: string;
   url?: string;
   citedBy?: number;
+  accepted?: boolean;   // true = accepted but not yet published
   tags: string[];
 }
 
