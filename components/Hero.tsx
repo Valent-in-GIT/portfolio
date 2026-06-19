@@ -79,7 +79,7 @@ export default function Hero() {
           <div className="flex-shrink-0">
             <div className="relative">
               <img
-                src="/DSC03749.JPG"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/DSC03749.JPG`}
                 alt="Eduardo Valentín Pérez"
                 className="h-96 w-72 rounded-[999px] object-cover border-4 border-white dark:border-slate-700 shadow-2xl"
               />
