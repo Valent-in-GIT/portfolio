@@ -94,6 +94,7 @@ export const publications: Publication[] = [
     year: 2024,
     venue: "ACONTACS, Vol. 6, pp. 18–25",
     venueType: "journal",
+    url: "https://www-optica.inaoep.mx/~tecnologia_salud/acontacs/articulos/2024/MyT2024-012-Estudio_fuera_de_linea_de_una_interfaz_cerebro_computadora_para_el_control_de_un_robot_movil_holonomico.pdf",
     abstract:
       "This work presents a classification methodology based on the EEGNet convolutional neural network model, validated offline. Using electroencephalogram (EEG) data from the four-class Motor Imagery paradigm of the BCI Competition 2008 2A, the EEG signals are used to generate commands that control a three-wheeled holonomic mobile robot. The growing interest in BCIs has generated a wide range of contributions aimed at improving human-machine communication through neural signals.",
     tags: ["BCI", "Mobile Robot", "EEGNet", "Motor Imagery", "Offline Validation"],
