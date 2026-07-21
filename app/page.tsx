@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Awards from "@/components/Awards";
 import Leadership from "@/components/Leadership";
+import Talks from "@/components/Talks";
 import ProjectCard from "@/components/ProjectCard";
 import PublicationCard from "@/components/PublicationCard";
 import { getFeaturedRepos, getGitHubUser } from "@/lib/github";
@@ -24,6 +25,7 @@ export default async function HomePage() {
       <About user={user} />
       <Awards />
       <Leadership />
+      <Talks />
 
       {/* Featured Projects */}
       <section className="py-16 sm:py-20 bg-white dark:bg-slate-900">
