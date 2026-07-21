@@ -1,0 +1,159 @@
+%-------------------------------------------------------------------------------
+% CV – Eduardo Valentin Perez Hernandez
+% Format: moderncv (classic, blue)
+%-------------------------------------------------------------------------------
+\PassOptionsToPackage{disable}{microtype}
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle[nosymbols]{classic}
+\moderncvcolor{blue}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[scale=0.82]{geometry}
+
+% Personal data
+\name{Eduardo Valentin}{Perez Hernandez}
+\title{M.Sc. Researcher --- Biosignal Analysis, Machine Learning \& Pattern Recognition}
+\phone[mobile]{+52~223~130~89~12}
+\email{eduardo.perezherna@ieee.org}
+\social[linkedin]{valent-in00}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+\makecvtitle
+
+%-------------------------------------------------------------------------------
+\section{Research Interests}
+\cvitem{}{Biosignal analysis (EEG, ECG), machine learning and pattern recognition for time-series classification, feature extraction and dimensionality reduction, representation learning, deep learning for sequential data, and natural language processing applied to neural signals.}
+
+%-------------------------------------------------------------------------------
+\section{Education}
+
+\cventry{2024 -- 2026}
+  {M.Sc. in Computer Science}
+  {Instituto Nacional de Astrof\'isica, \'Optica y Electr\'onica (INAOE)}
+  {Puebla, Mexico}{}
+  {Thesis: \textit{``Open-Vocabulary Text Decoding from Electroencephalographic Signals During Reading Tasks.''}\\
+   Designing and evaluating feature extraction pipelines (HHT, PSD, temporal statistics) and deep learning architectures for sequence-to-sequence decoding of biosignals; studying the effect of spatial channel configurations on classification performance.\\
+   Advisors: \href{https://scholar.google.com/citations?user=IyXV_oYAAAAJ}{Dr.\ Alejandro A.\ Torres-Garc\'ia} \& Dr.\ Luis Villase\~nor-Pineda.}
+
+\cventry{2018 -- 2024}
+  {B.Eng. in Mechatronics Engineering}
+  {Benem\'erita Universidad Aut\'onoma de Puebla (BUAP)}
+  {Puebla, Mexico}{}
+  {Thesis: \textit{``Shared Control System for a Holonomic Mobile Robot Based on a Brain--Computer Interface.''}\\
+   Applied convolutional neural networks (EEGNet) for real-time biosignal classification; designed a fuzzy logic shared-control system; integrated embedded hardware (Jetson Nano, Raspberry Pi Pico) with sensors and actuators.\\
+   Advisor: \href{https://scholar.google.com/citations?user=p_W-mx8AAAAJ}{Dr.\ Mar\'ia Monserrat Mor\'in Castillo}.}
+
+%-------------------------------------------------------------------------------
+\section{Publications}
+
+\cventry{2026}
+  {A Comparative Study of EEG Representations and Channel Settings for EEG-to-Text Decoding during Reading Tasks}
+  {10\textsuperscript{th} Graz Brain-Computer Interface Conference}
+  {Graz, Austria}{\textbf{Accepted --- Travel Grant}}
+  {E.V.\ P\'erez Hern\'andez, A.A.\ Torres-Garc\'ia, L.\ Villase\~nor-Pineda.\\
+   Benchmarked signal representations (HHT, PSD, temporal statistics) and spatial channel subsets for sequence-to-sequence decoding of biosignals; best result: BLEU-1 = 11.45, ROUGE-1 F1 = 11.52 (ZuCo v1\&v2).}
+
+\cventry{2025}
+  {Intersubject Variability in Classification Models for Brain-Computer Interfaces}
+  {Research in Computing Science, Vol.\ 154(10), pp.\ 143--154}
+  {}{}
+  {E.V.\ P\'erez Hern\'andez, M.\ Avi\~na-Corral, Z.A.\ G\'arate-Cahuantzi, J.A.\ Carrasco-Ochoa, J.F.\ Mart\'inez-Trinidad, A.A.\ Torres-Garc\'ia.\\
+   Studied the effect of subject variability on pattern recognition models; compared subject-specific, multisubject, and cross-subject training schemes using CSP + LDA/SVM; subject-specific model reached 90.71\%.}
+
+\cventry{Jun 2025}
+  {Evaluation of Spatial and Frequency Features for Improving the Classification of Motor Imagery}
+  {11\textsuperscript{th} International Brain-Computer Interface Meeting}
+  {Brussels, Belgium}{\textbf{Poster}}
+  {E.V.\ P\'erez Hern\'andez, M.\ Avi\~na-Corral, A.A.\ Torres-Garc\'ia, J.A.\ Carrasco-Ochoa, J.F.\ Mart\'inez-Trinidad.\\
+   Combined spatial (CSP) and frequency (DWT) feature extraction for biosignal classification; applied Relief-F for dimensionality reduction; EEGNet+DWT achieved 71.13\% average accuracy.\\
+   DOI: \href{https://doi.org/10.3217/978-3-99161-050-2}{10.3217/978-3-99161-050-2}}
+
+\cventry{Sep 2025}
+  {Towards a Neurotutor: Comparative Analysis of Machine Learning Models for EEG-Based Reading Task Classification}
+  {IEEE Brain Discovery \& Neurotechnology Workshop}
+  {Vancouver, BC, Canada}{\textbf{Poster --- Travel Grant}}
+  {Applied and compared supervised learning classifiers for time-series biosignal classification; evaluated generalization across cognitive tasks and subjects.}
+
+\cventry{2024}
+  {Offline Study of a BCI for Holonomic Mobile Robot Control}
+  {ACONTACS, Vol.\ 6, pp.\ 18--25}
+  {}{}
+  {E.V.\ P\'erez Hern\'andez, M.M.\ Morin Castillo, J.R.\ Conde S\'anchez.\\
+   Applied deep learning (EEGNet) for four-class biosignal classification; validated the pattern recognition pipeline offline before embedded deployment. ISSN: 2992-6750.}
+
+%-------------------------------------------------------------------------------
+\section{Awards \& Grants}
+
+\cventry{Sep 2026}
+  {Student Travel Grant}
+  {10\textsuperscript{th} Graz Brain-Computer Interface Conference}
+  {Graz, Austria}{}
+  {Competitive travel grant awarded to present research at the premier international BCI conference.}
+
+\cventry{Sep 2025}
+  {Student Travel Grant}
+  {IEEE Brain Discovery \& Neurotechnology Workshop}
+  {Vancouver, BC, Canada}{}
+  {Competitive travel grant awarded to attend and present at the IEEE Brain Discovery workshop.}
+
+\cventry{2024}
+  {Admission by Outstanding Academic Performance}
+  {INAOE --- M.Sc. Computer Science Program}
+  {Puebla, Mexico}{}
+  {Admitted to the master's program on the basis of distinguished undergraduate academic performance.}
+
+%-------------------------------------------------------------------------------
+\section{Research Experience}
+
+\cventry{Oct 2025 -- Oct 2026}
+  {Research Fellow}
+  {Laboratorio Nacional de Supercómputo del Sureste de M\'exico (LNS)}
+  {Puebla, Mexico}{}
+  {Project: \textit{``Open-Vocabulary Text Decoding from Electroencephalographic Signals During Natural Reading.''} (No.\ 202504065C)\\
+   Developing and training deep learning models for biosignal decoding on HPC infrastructure; leveraging GPU clusters and supercomputing resources for large-scale experimentation.}
+
+\cventry{Jun -- Nov 2022}
+  {Research Assistant}
+  {Benem\'erita Universidad Aut\'onoma de Puebla}
+  {Puebla, Mexico}{}
+  {Contributed to theoretical analysis for on-chip signal processing and classification of electrocardiographic (ECG) biosignals.\\
+   CONACYT-funded project (No.\ 319601).}
+
+%-------------------------------------------------------------------------------
+\section{Skills}
+
+\cvitem{Programming}{Python, MATLAB, Simulink, C++}
+\cvitem{ML / DSP}{PyTorch, Scikit-learn, MNE-Python, HuggingFace Transformers, SciPy}
+\cvitem{Hardware}{FPGA, Microcontrollers (Arduino, Raspberry Pi, Jetson Nano), Embedded Systems, IoT}
+\cvitem{HPC / Tools}{GPU computing, Supercomputing (LNS), Git, ROS, \LaTeX}
+\cvitem{Languages}{Spanish (Native), English (B1)}
+
+%-------------------------------------------------------------------------------
+\section{Leadership \& Service}
+
+\cventry{2023 -- 2025}
+  {President, Student Activities Committee}
+  {IEEE Puebla Section}{}{}
+  {Coordinated events, initiatives, and student engagement across the regional IEEE student community.}
+
+\cventry{2025}
+  {Secretary, Computer Society Professional Chapter}
+  {IEEE Puebla Section}{}{}
+  {Supported chapter governance, communications, and professional development activities.}
+
+\cventry{2025}
+  {Webmaster \& Social Media Chair}
+  {IEEE Mexican Humanitarian Technology Conference (MHTC) 2025}{}{}
+  {Managed the conference website and social media outreach.}
+
+\cventry{2022}
+  {President, Student Branch}
+  {IEEE --- Benem\'erita Universidad Aut\'onoma de Puebla}{}{}
+  {Organized technical workshops, talks, and community-building activities for engineering students.}
+
+\end{document}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

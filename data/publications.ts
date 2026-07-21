@@ -13,7 +13,21 @@ import type { Publication } from "@/types";
  */
 export const publications: Publication[] = [
   {
-    id: "pub-004",
+    id: "pub-006",
+    title: "Artificial Immune System",
+    authors: [
+      "Pérez-Hernández, E.V.",
+      "Zapotecas-Martínez, S.",
+    ],
+    year: 2026,
+    venue: "Encyclopedia of Engineering Optimization and Heuristics, Springer, Singapore",
+    venueType: "book-chapter",
+    doi: "10.1007/978-981-96-8165-5_73-1",
+    url: "https://doi.org/10.1007/978-981-96-8165-5_73-1",
+    tags: ["Artificial Immune System", "Optimization", "Heuristics"],
+  },
+  {
+    id: "pub-005",
     title:
       "A Comparative Study of EEG Representations and Channel Settings for EEG-to-Text Decoding during Reading Tasks",
     authors: [
@@ -50,7 +64,7 @@ export const publications: Publication[] = [
     tags: ["Motor Imagery", "EEG", "BCI", "DWT", "CSP"],
   },
   {
-    id: "pub-001",
+    id: "pub-002",
     title:
       "Intersubject Variability in Classification Models for Brain-Computer Interfaces",
     authors: [
@@ -69,7 +83,7 @@ export const publications: Publication[] = [
     tags: ["Intersubject Variability", "EEG", "BCI", "Motor Imagery", "CSP"],
   },
   {
-    id: "pub-002",
+    id: "pub-001",
     title:
       "Estudio fuera de línea de una Interfaz Cerebro Computadora para el control de un robot móvil holonómico",
     authors: [

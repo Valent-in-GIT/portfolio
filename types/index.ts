@@ -42,7 +42,7 @@ export interface Publication {
   authors: string[];
   year: number;
   venue: string;           // journal, conference, or preprint server
-  venueType: "journal" | "conference" | "workshop" | "preprint" | "thesis";
+  venueType: "journal" | "conference" | "workshop" | "preprint" | "thesis" | "book-chapter";
   abstract?: string;
   doi?: string;
   arxivId?: string;
