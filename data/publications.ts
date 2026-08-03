@@ -16,7 +16,7 @@ export const publications: Publication[] = [
     id: "pub-006",
     title: "Artificial Immune System",
     authors: [
-      "Pérez-Hernández, E.V.",
+      "Pérez Hernández, Eduardo V.",
       "Zapotecas-Martínez, S.",
     ],
     year: 2026,
@@ -28,6 +28,21 @@ export const publications: Publication[] = [
   },
   {
     id: "pub-005",
+    title: "Assessing Pain Through Multimodal Physiological Signals Using Traditional Machine Learning in AI4Pain 2026",
+    authors: [
+      "Pérez Hernández, Eduardo V.", "Juan Pablo Tiburcio-Pérez", "Sandra E. Barajas-Montiel", 
+      "Alejandro A. Torres-García", "Luis Villaseñor-Pineda"
+    ],
+    year: 2026,
+    venue: "2026 14th International Conference on Affective Computing and Intelligent Interaction Workshops and Demos (ACIIW)",
+    venueType: "conference",
+    abstract:
+      "We present our participation in AI4Pain 2026, an initiative focused on developing artificial intelligence (AI) models for automatic pain assessment through multimodal physiological signals, including Electrodermal Activity (EDA), Blood Volume Pulse (BVP), Respiration (RESP), and Peripheral Oxygen Saturation (SpO\textsubscript{2}). In contrast to recent deep learning approaches, this work relies on traditional machine learning methods combined with handcrafted signal representations for pain detection and localization, comparing two complementary pipelines: a multiclass stacking approach and a two-step hierarchical approach. Our participation pursued two main objectives. The first was to validate the usefulness of handcrafted representations for processing physiological signals and to evaluate their capability to identify the origin of pain. The second was to analyze the complementarity among these representations by assessing how the integration of features extracted from different physiological modalities affects the performance of traditional classification models. Overall, we aim to provide evidence regarding the potential of conventional machine learning and feature engineering strategies for multimodal pain assessment. Our results show that EDA and BVP are the two most relevant signals for this task, that their fusion yields a modest improvement over unimodal classifiers, and that most of the discriminative information is captured by temporal descriptors related to signal magnitude, variability, and statistical distribution.",
+    accepted: true,
+    tags: ["Pain Assessment", "Multimodal Physiological Signals", "Handcrafted Features", "Machine Learning"],
+  },
+  {
+    id: "pub-004",
     title:
       "A Comparative Study of EEG Representations and Channel Settings for EEG-to-Text Decoding during Reading Tasks",
     authors: [
@@ -94,7 +109,6 @@ export const publications: Publication[] = [
     year: 2024,
     venue: "ACONTACS, Vol. 6, pp. 18–25",
     venueType: "journal",
-    url: "https://www-optica.inaoep.mx/~tecnologia_salud/acontacs/articulos/2024/MyT2024-012-Estudio_fuera_de_linea_de_una_interfaz_cerebro_computadora_para_el_control_de_un_robot_movil_holonomico.pdf",
     abstract:
       "This work presents a classification methodology based on the EEGNet convolutional neural network model, validated offline. Using electroencephalogram (EEG) data from the four-class Motor Imagery paradigm of the BCI Competition 2008 2A, the EEG signals are used to generate commands that control a three-wheeled holonomic mobile robot. The growing interest in BCIs has generated a wide range of contributions aimed at improving human-machine communication through neural signals.",
     tags: ["BCI", "Mobile Robot", "EEGNet", "Motor Imagery", "Offline Validation"],
