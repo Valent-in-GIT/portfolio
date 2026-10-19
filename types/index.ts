@@ -53,6 +53,35 @@ export interface Publication {
 }
 
 // ──────────────────────────────────────────────
+// Conferences of Interest
+// ──────────────────────────────────────────────
+export interface ConferenceDate {
+  start: string;   // ISO date YYYY-MM-DD
+  end: string;
+  location: string;
+  city: string;
+  country: string;
+}
+
+export interface Conference {
+  id: string;
+  shortName: string;        // e.g. "ACL 2027"
+  fullName: string;
+  acronym: string;          // e.g. "ACL", "EMBC"
+  url: string;
+  conferenceDate?: ConferenceDate;
+  deadlines?: {
+    label: string;          // e.g. "Abstract submission", "CFP"
+    date: string;           // ISO date YYYY-MM-DD
+  }[];
+  notificationDate?: string;
+  frequency: "annual" | "biennial" | "other";
+  topics: string[];
+  notes?: string;
+  status: "cfp-open" | "upcoming" | "past" | "tba";
+}
+
+// ──────────────────────────────────────────────
 // Navigation
 // ──────────────────────────────────────────────
 export interface NavItem {
