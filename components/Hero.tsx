@@ -37,7 +37,7 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-400">
-              M.Sc. student in Computer Science at INAOE with a background in
+              M.Sc. in Computer Science (INAOE) with a background in
               Mechatronics Engineering. My research focuses on Brain-Computer
               Interfaces, EEG signal processing, and AI-driven approaches for
               neural decoding, exploring the intersection between neuroscience,
