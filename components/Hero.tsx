@@ -27,7 +27,7 @@ export default function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-500 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-600" />
               </span>
-              MSCS Student · 2nd Year
+              M.Sc. Computer Science · INAOE
             </span>
 
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">

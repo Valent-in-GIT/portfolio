@@ -18,8 +18,8 @@ export default function About({ user }: Props) {
             <div className="mt-4 space-y-4 text-slate-600 dark:text-slate-400 leading-relaxed text-justify">
               <p>
                 Hi, I&apos;m Eduardo Valentín Pérez Hernández. I hold a B.Sc. in Mechatronics Engineering
-                from the Benemérita Universidad Autónoma de Puebla (BUAP) and I am currently pursuing an
-                M.Sc. in Computer Science at the National Institute of Astrophysics, Optics and Electronics (INAOE).
+                from the Benemérita Universidad Autónoma de Puebla (BUAP) and an M.Sc. in Computer Science
+                from the National Institute of Astrophysics, Optics and Electronics (INAOE).
                 My research interests lie at the intersection of Brain-Computer Interfaces (BCIs), biosignal processing,
                 artificial intelligence, and language models.
               </p>
@@ -52,7 +52,7 @@ export default function About({ user }: Props) {
               Quick info
             </h3>
             <ul className="space-y-3">
-              <InfoRow icon="🎓" label="Degree" value="M.Sc. Computer Science — INAOE" />
+              <InfoRow icon="🎓" label="Degree" value="M.Sc. Computer Science — INAOE (2026)" />
               {user?.location && (
                 <InfoRow icon="📍" label="Location" value={user.location} />
               )}

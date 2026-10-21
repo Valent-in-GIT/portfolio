@@ -37,8 +37,9 @@ export const publications: Publication[] = [
     venue: "2026 14th International Conference on Affective Computing and Intelligent Interaction Workshops and Demos (ACIIW)",
     venueType: "conference",
     abstract:
-      "We present our participation in AI4Pain 2026, an initiative focused on developing artificial intelligence (AI) models for automatic pain assessment through multimodal physiological signals, including Electrodermal Activity (EDA), Blood Volume Pulse (BVP), Respiration (RESP), and Peripheral Oxygen Saturation (SpO\textsubscript{2}). In contrast to recent deep learning approaches, this work relies on traditional machine learning methods combined with handcrafted signal representations for pain detection and localization, comparing two complementary pipelines: a multiclass stacking approach and a two-step hierarchical approach. Our participation pursued two main objectives. The first was to validate the usefulness of handcrafted representations for processing physiological signals and to evaluate their capability to identify the origin of pain. The second was to analyze the complementarity among these representations by assessing how the integration of features extracted from different physiological modalities affects the performance of traditional classification models. Overall, we aim to provide evidence regarding the potential of conventional machine learning and feature engineering strategies for multimodal pain assessment. Our results show that EDA and BVP are the two most relevant signals for this task, that their fusion yields a modest improvement over unimodal classifiers, and that most of the discriminative information is captured by temporal descriptors related to signal magnitude, variability, and statistical distribution.",
-    accepted: true,
+      "We present our participation in AI4Pain 2026, an initiative focused on developing artificial intelligence (AI) models for automatic pain assessment through multimodal physiological signals, including Electrodermal Activity (EDA), Blood Volume Pulse (BVP), Respiration (RESP), and Peripheral Oxygen Saturation (SpO2). In contrast to recent deep learning approaches, this work relies on traditional machine learning methods combined with handcrafted signal representations for pain detection and localization, comparing two complementary pipelines: a multiclass stacking approach and a two-step hierarchical approach. Our participation pursued two main objectives. The first was to validate the usefulness of handcrafted representations for processing physiological signals and to evaluate their capability to identify the origin of pain. The second was to analyze the complementarity among these representations by assessing how the integration of features extracted from different physiological modalities affects the performance of traditional classification models. Overall, we aim to provide evidence regarding the potential of conventional machine learning and feature engineering strategies for multimodal pain assessment. Our results show that EDA and BVP are the two most relevant signals for this task, that their fusion yields a modest improvement over unimodal classifiers, and that most of the discriminative information is captured by temporal descriptors related to signal magnitude, variability, and statistical distribution.",
+    doi: "10.1109/ACIIW71585.2026.11712110",
+    url: "https://doi.org/10.1109/ACIIW71585.2026.11712110",
     tags: ["Pain Assessment", "Multimodal Physiological Signals", "Handcrafted Features", "Machine Learning"],
   },
   {
@@ -51,11 +52,12 @@ export const publications: Publication[] = [
       "Villaseñor-Pineda, Luis",
     ],
     year: 2026,
-    venue: "10th Graz Brain-Computer Interface Conference 2026",
+    venue: "Proceedings of the 10th Graz Brain-Computer Interface Conference 2026, pp. 476–481",
     venueType: "conference",
     abstract:
       "Decoding natural language from electroencephalography (EEG) signals remains a major challenge in brain–computer interface research for assistive communication. This work presents a comparative study of EEG representations and channel configurations for EEG-to-text decoding during reading tasks. We evaluate Hilbert–Huang Transform (HHT) features, power spectral density (PSD), and temporal statistical descriptors across three spatial configurations: full-head EEG, a reduced 10–20 system, and a Broca–Wernicke subset. Experiments are conducted on the ZuCo v1 and v2 datasets using fully autoregressive decoding without teacher forcing. Results show that temporal statistical features achieve the best overlap-based performance under the full-head configuration (BLEU-1 = 11.45, ROUGE-1 F1 = 11.52), while reduced channel subsets remain competitive despite lower spatial dimensionality.",
-    accepted: true,
+    doi: "10.3217/978-3-99161-093-9-082",
+    url: "https://doi.org/10.3217/978-3-99161-093-9-082",
     tags: ["EEG-to-Text", "BCI", "Language Decoding", "Deep Learning"],
   },
   {
